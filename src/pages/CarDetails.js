@@ -1,4 +1,4 @@
-import { Link, useParams } from 'react-router-dom';
+import { Link, Outlet, useParams } from 'react-router-dom';
 
 const Car = () => {
   // const params = useParams();
@@ -19,6 +19,7 @@ const Car = () => {
           <Link to="gallery">Gallery</Link>
         </li>
       </ul>
+      <Outlet/>
     </div>
   );
 };
